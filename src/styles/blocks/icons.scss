@@ -1,5 +1,4 @@
-
- .icon{
+.icon{
   display: block;
   height: 24px;
   width: 24px;
@@ -8,7 +7,7 @@
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet{
+  @include on-tablet{
       height: 32px;
       width: 32px;
   }
@@ -23,7 +22,6 @@
     &:hover{
     background-image: url(../images/icons/Icon-Burger-menu-hover.svg);
   }
-
 }
 
 &--close{

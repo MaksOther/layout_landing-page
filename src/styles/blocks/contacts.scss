@@ -2,8 +2,8 @@
   width: 100%;
 
   &__wrapper {
-    @include pageGrid;
-
+    @include page-grid;
+    
     gap: 48px;
   }
 
@@ -13,11 +13,11 @@
     flex-direction: column;
     row-gap: 16px;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 5;
     }
   }
@@ -33,6 +33,7 @@
     font-weight: 400;
     line-height: 140%;
     color: $form-text-color;
+
      @include hover(transform, scale(1.1));
 
   }
@@ -44,17 +45,18 @@
     border-radius: 8px;
     border: none;
 
-    font-family: Space Mono, sans-serif;
+    font-family: "Space Mono", sans-serif;
     color: $form-text-color;
 
     resize: none;
-              @include hover(transform, scale(1.1));
+
+    @include hover(transform, scale(1.1));
 
   }
 
   &__input::placeholder,
   &__textarea::placeholder {
-    font-family: Space Mono, sans-serif;
+    font-family: "Space Mono", sans-serif;
     font-size: 14px;
     font-weight: 400;
 
@@ -100,7 +102,7 @@
     flex-direction: column;
     gap: 24px;
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 7/-3;
     }
   }
@@ -125,7 +127,6 @@
     line-height: 140%;
     color: #191919;
     letter-spacing: 0;
-    color: $main-text-color;
     text-decoration: none;
   }
 }
