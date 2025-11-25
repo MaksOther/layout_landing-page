@@ -58,6 +58,7 @@
 
     resize: none;
     background-color: #F8F8FA;
+    
     @include hover(transform, scale(1.1));
 
     &:hover{
