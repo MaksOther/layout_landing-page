@@ -35,6 +35,14 @@
     color: $form-text-color;
 
      @include hover(transform, scale(1.1));
+        &:hover{
+          border: 1px solid #D5D7DE;
+
+    }
+    &:focus{
+       border: 1px solid $main-text-color;
+       color: $main-text-color;
+    }
 
   }
 
@@ -49,9 +57,17 @@
     color: $form-text-color;
 
     resize: none;
-
+    background-color: #F8F8FA;
     @include hover(transform, scale(1.1));
 
+    &:hover{
+          border: 1px solid #D5D7DE;
+
+    }
+    &:focus{
+       border: 1px solid $main-text-color;
+       color: $main-text-color;
+    }
   }
 
   &__input::placeholder,
@@ -101,6 +117,7 @@
     grid-column: span 2;
     flex-direction: column;
     gap: 24px;
+
 
     @include on-desktop {
       grid-column: 7/-3;
